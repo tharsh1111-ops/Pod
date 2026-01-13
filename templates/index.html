@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcast Search - Find Your Next Favorite Show</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎙️ Podcast Search</h1>
+            <p class="subtitle">Discover and explore podcasts from around the world</p>
+        </header>
+
+        <div class="search-section">
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search for podcasts..." autocomplete="off">
+                <button id="searchBtn">Search</button>
+            </div>
+            <div class="quick-actions">
+                <button class="action-btn" id="trendingBtn">🔥 Trending</button>
+                <button class="action-btn" id="recentBtn">🆕 Recent Episodes</button>
+                <button class="action-btn" id="favoritesBtn">⭐ Favorites</button>
+            </div>
+        </div>
+
+        <div id="loadingSpinner" class="loading-spinner" style="display: none;">
+            <div class="spinner"></div>
+            <p>Loading podcasts...</p>
+        </div>
+
+        <div id="errorMessage" class="error-message" style="display: none;"></div>
+
+        <div id="resultsSection" class="results-section" style="display: none;">
+            <div class="results-header">
+                <h2 id="resultsTitle">Search Results</h2>
+                <span id="resultsCount" class="results-count"></span>
+            </div>
+            <div id="resultsGrid" class="results-grid"></div>
+        </div>
+
+        <div id="episodesModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div id="modalHeader" class="modal-header"></div>
+                <div id="episodesList" class="episodes-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
