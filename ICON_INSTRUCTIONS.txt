@@ -1,0 +1,42 @@
+ICON SETUP FOR PWA
+==================
+
+To complete the PWA setup, you need to add two icon images:
+
+REQUIRED ICONS:
+---------------
+1. icon-192.png (192x192 pixels)
+2. icon-512.png (512x512 pixels)
+
+HOW TO CREATE ICONS:
+--------------------
+Option 1 - Use an online tool:
+  - Visit: https://www.pwabuilder.com/imageGenerator
+  - Upload a square image (at least 512x512)
+  - It will generate all required sizes
+  - Download and place in the 'static' folder
+
+Option 2 - Create manually:
+  - Create a square image with a microphone/podcast icon
+  - Use Photoshop, GIMP, or Canva
+  - Export as PNG in two sizes: 192x192 and 512x512
+  - Save as icon-192.png and icon-512.png in the 'static' folder
+
+Option 3 - Use a temporary placeholder:
+  - You can use any square PNG image as a temporary icon
+  - Rename them to icon-192.png and icon-512.png
+
+ICON DESIGN TIPS:
+-----------------
+- Use a simple, recognizable design
+- Include a microphone, headphones, or podcast wave symbol
+- Match your app's purple gradient theme (#667eea to #764ba2)
+- Make sure text is readable at small sizes
+- Use a solid background color or simple gradient
+
+WHERE TO PLACE:
+---------------
+Place both icon files in:
+c:\Users\thars\OneDrive\Desktop\agentic ai\github\visual studio\podcastapp\static\
+
+The app will work without icons, but users won't see a custom app icon when they install it.
